@@ -1,0 +1,178 @@
+https://komalkant-portfolio.vercel.app/
+
+
+
+Skills
+Design
+Figma
+Adobe XD
+Photoshop
+Illustrator
+Canva
+Frontend
+HTML5
+CSS3
+JavaScript
+Bootstrap
+Tailwind CSS
+Backend
+PHP
+MySQL
+CMS
+WordPress
+Elementor
+Cloud
+AWS EC2
+AWS S3
+IAM
+VPC
+Route 53
+CloudFront
+Tools
+Git
+GitHub
+VS Code
+XAMPP
+Jira
+My Process
+01 Research
+
+Understanding business goals, user needs, and project requirements.
+
+02 Design
+
+Creating wireframes, user flows, prototypes, and high-fidelity UI designs.
+
+03 Develop
+
+Building responsive, fast, and accessible websites.
+
+04 Launch
+
+Testing, optimizing performance, and deploying projects.
+
+Featured Projects
+Portfolio Website
+
+Designed and developed a modern personal portfolio with smooth animations, responsive layouts, and clean UI.
+
+Tech Stack
+
+HTML • CSS • JavaScript • GSAP
+
+Real Estate Website
+
+Customized a professional real estate website using WordPress and Elementor, including responsive pages, booking forms, and optimized layouts.
+
+Tech Stack
+
+WordPress • Elementor • PHP • CSS
+
+AWS Three-Tier Architecture
+
+Designed and deployed a scalable AWS architecture using VPC, EC2, ALB, Auto Scaling, RDS, and S3 following cloud best practices.
+
+Tech Stack
+
+AWS • EC2 • VPC • RDS • ALB • S3
+
+UI/UX Mobile App Design
+
+Designed a complete mobile application with user flows, wireframes, interactive prototypes, and reusable components.
+
+Tool
+
+Figma
+
+Experience
+Web Developer
+
+Adhrit Technologies
+
+Worked on responsive websites, WordPress customization, UI improvements, and website optimization.
+
+Responsibilities
+Developed responsive web pages
+Customized WordPress themes
+Improved UI/UX
+Fixed bugs
+Integrated forms and plugins
+Website maintenance
+Education
+Master of Computer Applications (MCA)
+
+Completed in 2024
+
+Bachelor of Computer Applications (BCA)
+
+Completed in 2020
+
+Certifications
+AWS Cloud Training
+UI/UX Design
+Web Development
+Why Work With Me
+
+✔ User-Centered Design
+
+✔ Clean and Modern UI
+
+✔ Responsive Development
+
+✔ Performance Optimization
+
+✔ Cloud Learning Mindset
+
+✔ Detail-Oriented Approach
+
+Testimonials
+
+"Rajeswari consistently delivered clean, responsive, and user-friendly designs while maintaining excellent attention to detail."
+
+Let's Build Something Amazing
+
+Whether you need a modern website, an engaging user experience, or cloud-based solutions, I'm ready to help bring your ideas to life.
+
+Let's connect and create something impactful together.
+
+Contact
+Get In Touch
+
+📧 your-email@example.com
+
+📱 +91 XXXXX XXXXX
+
+📍 India
+
+🔗 LinkedIn
+
+🔗 GitHub
+
+🔗 Behance (Optional)
+
+Footer
+
+Rajeswari Reddy
+
+UI/UX Designer • Web Developer • AWS Cloud Enthusiast
+
+© 2026 Rajeswari Reddy. All Rights Reserved.
+
+Suggested Website Sections
+Hero
+About
+Services
+Skills
+Experience
+Projects
+Education & Certifications
+Testimonials
+Contact
+Footer
+
+For a premium feel, consider adding:
+
+A dark theme with indigo (#4F46E5) and purple (#8B5CF6) accents.
+Smooth scrolling, parallax effects, and subtle hover animations.
+GSAP or Framer Motion animations for section transitions and project cards.
+A typewriter effect in the hero section cycling through: UI/UX Designer, Web Developer, and AWS Cloud Enthusiast.

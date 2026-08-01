@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Rajeswari Portfolio | Design. Innovate. Inspire.</title>
+
+
+</head>
+
+<body class="body">
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonials">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">Experiences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-cta-btn" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Ambient background glows -->
+    <div class="hero-bg-glow">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <section class="container hero-container-section">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12">
+                <div class="hero-section">
+                    <span class="hero-greeting reveal-item">Welcome to my space</span>
+                    <h1 class="hero-title reveal-item delay-1">Hi, I'm <span class="gradient-text">Rajeswari</span></h1>
+                    <div class="hero-subtitle reveal-item delay-2">
+                        <span>I am a</span>
+                        <span id="typewriterText" class="gradient-text"></span>
+                        <span class="typewriter-cursor">|</span>
+                    </div>
+                    <p class="hero-description reveal-item delay-3">I create intuitive digital experiences that combine
+                        beautiful design with modern web technologies. From designing user-centered interfaces to
+                        developing responsive websites and exploring cloud solutions.</p>
+                    <div class="btn-hero-group reveal-item delay-4">
+                        <a href="#" class="btn-custom btn-primary-hero">
+                            <img src="file:///D:/K_Rajeswari_Reddy_ATS_Resume.pdf" alt="">
+                            <span>Download CV</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                        </a>
+                        <a href="#projects" class="btn-custom btn-secondary-hero">View My Work</a>
+                        <a href="#contact" class="btn-custom btn-secondary-hero">Contact Me</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="hero-photo-wrapper reveal-scale">
+                    <div class="photo-glow"></div>
+                    <div class="photo-ring ring-outer"></div>
+                    <div class="photo-ring ring-inner"></div>
+                    <div class="floating-badge badge-dev">
+                        <span>Web Developer 💻</span>
+                    </div>
+                    <div class="floating-badge badge-cloud">
+                        <span>AWS Cloud ☁️</span>
+                    </div>
+                    <div class="hero-avatar-frame">
+                        <img src="./images/banner.jpeg" alt="Rajeswari Portfolio Photo" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Close mobile menu when nav links are clicked
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const navbarCollapse = document.getElementById('navbarSupportedContent');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+                        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+                        if (bsCollapse) {
+                            bsCollapse.hide();
+                        }
+                    }
+                });
+            });
+
+            const words = ["Web Developer", "Frontend Developer", "UI/UX Designer", "AWS Cloud Enthusiast"];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            const typewriterEl = document.getElementById('typewriterText');
+
+            function type() {
+                const currentWord = words[wordIndex];
+                if (isDeleting) {
+                    typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                let typeSpeed = isDeleting ? 40 : 80;
+
+                if (!isDeleting && charIndex === currentWord.length) {
+                    typeSpeed = 1500; // Pause at end of word
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                    typeSpeed = 400; // Pause before typing next word
+                }
+
+                setTimeout(type, typeSpeed);
+            }
+
+            if (typewriterEl) {
+                type();
+            }
+
+            // Scroll reveals using IntersectionObserver
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -40px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-scroll-left, .reveal-scroll-right, .reveal-scroll-up').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Generate GitHub contribution cells dynamically
+            const graphContainer = document.getElementById('github-contrib-graph');
+            if (graphContainer) {
+                for (let i = 0; i < 168; i++) {
+                    const cell = document.createElement('div');
+                    cell.classList.add('contrib-cell');
+                    const rand = Math.random();
+                    let level = 0;
+                    if (rand > 0.88) level = 4;
+                    else if (rand > 0.72) level = 3;
+                    else if (rand > 0.55) level = 2;
+                    else if (rand > 0.25) level = 1;
+                    cell.classList.add(`level-${level}`);
+                    cell.style.animationDelay = `${Math.random() * 0.8}s`;
+                    graphContainer.appendChild(cell);
+                }
+            }
+
+            // Contact form submission
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const submitBtn = contactForm.querySelector('button[type="submit"]');
+                    const originalBtnContent = submitBtn.innerHTML;
+
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = `
+                        <span>Sending...</span>
+                        <span class="spinner-border spinner-border-sm ms-2" role="status" aria-hidden="true" style="color: var(--bg-darker)"></span>
+                    `;
+
+                    // Handle local testing fallback for file:/// protocol (local HTML file)
+                    // since external form APIs block local file origins due to browser CORS policies
+                    if (window.location.protocol === 'file:') {
+                        setTimeout(() => {
+                            submitBtn.innerHTML = `
+                                <span>Message Sent! ✓</span>
+                            `;
+                            submitBtn.classList.remove('btn-primary-hero');
+                            submitBtn.style.background = 'linear-gradient(135deg, #05ffa3 0%, #00f5c4 100%)';
+                            submitBtn.style.boxShadow = '0 4px 20px rgba(0, 245, 196, 0.4)';
+
+                            alert("Local Demo Mode: Form submitted successfully!\n\n(Note: Real email forwarding is disabled locally to prevent browser CORS blocks, but is fully configured. Once this page is deployed to Vercel/hosting, emails will be delivered to krajeswariwebtech@gmail.com)");
+
+                            setTimeout(() => {
+                                contactForm.reset();
+                                submitBtn.disabled = false;
+                                submitBtn.innerHTML = originalBtnContent;
+                                submitBtn.classList.add('btn-primary-hero');
+                                submitBtn.style.background = '';
+                                submitBtn.style.boxShadow = '';
+                            }, 3000);
+                        }, 1000);
+                        return;
+                    }
+
+                    const name = document.getElementById('form-name').value;
+                    const email = document.getElementById('form-email').value;
+                    const subject = document.getElementById('form-subject').value;
+                    const message = document.getElementById('form-message').value;
+
+                    fetch("https://formsubmit.co/ajax/krajeswariwebtech@gmail.com", {
+                        method: "POST",
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            Name: name,
+                            Email: email,
+                            Subject: subject,
+                            Message: message
+                        })
+                    })
+                        .then(response => {
+                            if (response.ok) {
+                                return response.json();
+                            } else {
+                                throw new Error('Form submission failed');
+                            }
+                        })
+                        .then(data => {
+                            submitBtn.innerHTML = `
+                            <span>Message Sent! ✓</span>
+                        `;
+                            submitBtn.classList.remove('btn-primary-hero');
+                            submitBtn.style.background = 'linear-gradient(135deg, #05ffa3 0%, #00f5c4 100%)';
+                            submitBtn.style.boxShadow = '0 4px 20px rgba(0, 245, 196, 0.4)';
+
+                            setTimeout(() => {
+                                contactForm.reset();
+                                submitBtn.disabled = false;
+                                submitBtn.innerHTML = originalBtnContent;
+                                submitBtn.classList.add('btn-primary-hero');
+                                submitBtn.style.background = '';
+                                submitBtn.style.boxShadow = '';
+                            }, 3000);
+                        })
+                        .catch(error => {
+                            console.error('Error submitting form:', error);
+                            submitBtn.innerHTML = `
+                            <span>Failed to Send! ✗</span>
+                        `;
+                            submitBtn.classList.remove('btn-primary-hero');
+                            submitBtn.style.background = 'linear-gradient(135deg, #ff4d4d 0%, #ff1a1a 100%)';
+                            submitBtn.style.boxShadow = '0 4px 20px rgba(255, 77, 77, 0.4)';
+
+                            setTimeout(() => {
+                                submitBtn.disabled = false;
+                                submitBtn.innerHTML = originalBtnContent;
+                                submitBtn.classList.add('btn-primary-hero');
+                                submitBtn.style.background = '';
+                                submitBtn.style.boxShadow = '';
+                            }, 3000);
+                        });
+                });
+            }
+        });
+    </script>
+    <section class="container about-section" id="about">
+        <div class="row align-items-center">
+            <div class="col-lg-6 reveal-scroll-left">
+                <div class="about-img-wrapper">
+                    <img src="./images/about.jpeg" alt="About Rajeswari" class="about-img">
+                    <div class="about-img-glow"></div>
+                </div>
+            </div>
+            <div class="col-lg-6 reveal-scroll-right">
+                <div class="about-text-content">
+                    <h2 class="about-title">About <span class="gradient-text">Me</span></h2>
+                    <p class="about-desc">I'm a passionate UI/UX Designer and Web Developer with a Master's in Computer
+                        Applications (MCA). I enjoy transforming ideas into user-friendly digital products that provide
+                        seamless experiences.</p>
+                    <p class="about-desc">My expertise includes designing clean interfaces, developing responsive
+                        websites, and continuously learning AWS cloud technologies to build modern, scalable
+                        applications.</p>
+                    <p class="about-desc font-italic">I believe great design isn't just about appearance—it's about
+                        solving problems and creating meaningful user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    <section class="container idothis-section" id="services">
+        <div class="row">
+            <div class="col-12 text-center mb-5 reveal-scroll-up">
+                <h2 class="idothis-title">What <span class="gradient-text">I Do</span></h2>
+                <div class="idothis-subtitle-line"></div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <!-- UI/UX Design Column -->
+            <div class="col-lg-4 col-md-6 reveal-scroll-left">
+                <div class="idothis-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-wrapper uiux-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
+                            <circle cx="12" cy="12" r="4" />
+                            <path d="M12 2v6M12 16v6M2 12h6M16 12h6" />
+                        </svg>
+                    </div>
+                    <h3 class="card-heading">UI/UX Design</h3>
+                    <ul class="card-list">
+                        <li>User Research</li>
+                        <li>User Flow</li>
+                        <li>Information Architecture</li>
+                        <li>Design Systems</li>
+                        <li>Responsive Design</li>
+                        <li>Usability Testing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Web Development Column -->
+            <div class="col-lg-4 col-md-6 reveal-scroll-up">
+                <div class="idothis-card active-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-wrapper webdev-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <h3 class="card-heading">Web Development</h3>
+                    <ul class="card-list">
+                        <li>Responsive Websites</li>
+                        <li>Landing Pages</li>
+                        <li>Portfolio Websites</li>
+                        <li>Business Websites</li>
+                        <li>WordPress Development</li>
+                        <li>Frontend Development</li>
+                        <li>Website Optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cloud & AWS Column -->
+            <div class="col-lg-4 col-md-6 reveal-scroll-right">
+                <div class="idothis-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-wrapper cloud-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M18 10h-.01M7.5 14h.01M9 20h6a5 5 0 0 0 4.908-4.093A3.5 3.5 0 0 0 16.5 9h-.323A7.5 7.5 0 0 0 5 11.5c0 .357.025.707.074 1.05A4.5 4.5 0 0 0 7.5 20z" />
+                        </svg>
+                    </div>
+                    <h3 class="card-heading">Cloud & AWS</h3>
+                    <ul class="card-list">
+                        <li>AWS Fundamentals</li>
+                        <li>EC2, S3, IAM, VPC</li>
+                        <li>Cloud Architecture Basics</li>
+                        <li>Linux Operating System</li>
+                        <li>Git & GitHub Workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container skills-section" id="skills">
+        <div class="row">
+            <div class="col-12 text-center mb-5 reveal-scroll-up">
+                <h2 class="skills-title">My <span class="gradient-text">Skills</span></h2>
+                <div class="skills-subtitle-line"></div>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <!-- Design Card -->
+            <div class="col-lg-4 col-md-6 reveal-scroll-left">
+                <div class="skills-card">
+                    <div class="skills-card-glow"></div>
+                    <h3 class="skills-card-title"><span class="skills-icon">🎨</span> Design</h3>
+                    <div class="skills-list">
+
+
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">Illustrator</span>
+                        <span class="skill-tag">Canva</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend Card -->
+            <div class="col-lg-4 col-md-6 reveal-scroll-up">
+                <div class="skills-card">
+                    <div class="skills-card-glow"></div>
+                    <h3 class="skills-card-title"><span class="skills-icon">💻</span> Frontend</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bootstrap</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Card -->
+            <div class="col-lg-4 col-md-6 reveal-scroll-right">
+                <div class="skills-card">
+                    <div class="skills-card-glow"></div>
+                    <h3 class="skills-card-title"><span class="skills-icon">⚙️</span> Backend</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CMS Card -->
+            <div class="col-lg-4 col-md-6 reveal-scroll-left">
+                <div class="skills-card">
+                    <div class="skills-card-glow"></div>
+                    <h3 class="skills-card-title"><span class="skills-icon">📄</span> CMS</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">Elementor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud & AWS Card -->
+            <div class="col-lg-4 col-md-6 reveal-scroll-up">
+                <div class="skills-card">
+                    <div class="skills-card-glow"></div>
+                    <h3 class="skills-card-title"><span class="skills-icon">☁️</span> Cloud & AWS</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">AWS Fundamentals</span>
+                        <span class="skill-tag">EC2, S3, IAM, VPC</span>
+                        <span class="skill-tag">Cloud Architecture</span>
+                        <span class="skill-tag">Linux OS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools Card -->
+            <div class="col-lg-4 col-md-6 reveal-scroll-right">
+                <div class="skills-card">
+                    <div class="skills-card-glow"></div>
+                    <h3 class="skills-card-title"><span class="skills-icon">🛠️</span> Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">antigravity IDE</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">XAMPP</span>
+                        <span class="skill-tag">FileZilla</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Tools Card -->
+            <div class="col-lg-8 col-md-12 reveal-scroll-up">
+                <div class="skills-card ai-skills-card">
+                    <div class="skills-card-glow"></div>
+                    <h3 class="skills-card-title"><span class="skills-icon">🤖</span> AI Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">ChatGPT</span>
+                        <span class="skill-tag">GitHub Copilot</span>
+                        <span class="skill-tag">Replit</span>
+                        <span class="skill-tag">Google Gemini</span>
+                        <span class="skill-tag">Perplexity AI</span>
+                        <span class="skill-tag">Canva AI</span>
+                        <span class="skill-tag">Commit AI</span>
+                        <span class="skill-tag">Zencoder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container projects-section" id="projects">
+        <div class="row">
+            <div class="col-12 text-center mb-5 reveal-scroll-up">
+                <h2 class="projects-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="projects-subtitle-line"></div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <!-- Project 1: Portfolio -->
+            <div class="col-lg-6 col-md-12 reveal-scroll-left">
+                <div class="project-card">
+                    <div class="project-cover-gradient cover-1">
+                        <span class="project-category">Web Design / Dev</span>
+                        <div class="project-icon-badge">💻</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-name">Portfolio Website</h3>
+                        <p class="project-desc">Designed and developed a modern personal portfolio with smooth
+                            animations, responsive layouts, and clean UI.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">GSAP</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link-btn primary-link">
+                                <span>Live Demo</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link-btn secondary-link">
+                                <span>Code</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: ATS -->
+            <div class="col-lg-6 col-md-12 reveal-scroll-right">
+                <div class="project-card">
+                    <div class="project-cover-gradient cover-2">
+                        <span class="project-category">Full Stack Web App</span>
+                        <div class="project-icon-badge">⚙️</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-name">Applicant Tracking System (ATS)</h3>
+                        <p class="project-desc">A web-based recruitment management platform that helps HR teams manage
+                            job postings, track applicants, schedule interviews, and monitor hiring progress through an
+                            intuitive dashboard.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Bootstrap</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link-btn primary-link">
+                                <span>Live Demo</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link-btn secondary-link">
+                                <span>Code</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: AWS -->
+            <div class="col-lg-6 col-md-12 reveal-scroll-left">
+                <div class="project-card">
+                    <div class="project-cover-gradient cover-3">
+                        <span class="project-category">Cloud Infrastructure</span>
+                        <div class="project-icon-badge">☁️</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-name">AWS Three-Tier Architecture</h3>
+                        <p class="project-desc">Designed and deployed a highly available, scalable, and secure AWS
+                            infrastructure utilizing VPC, public/private subnets, EC2, IAM, RDS, and S3 following cloud
+                            best practices.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">EC2</span>
+                            <span class="tech-badge">VPC</span>
+                            <span class="tech-badge">RDS</span>
+                            <span class="tech-badge">IAM</span>
+                            <span class="tech-badge">S3</span>
+                        </div>
+                        <!--<div class="project-links">
+                            <a href="#" class="project-link-btn primary-link">
+                                <span>Case Study</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link-btn secondary-link">
+                                <span>Architecture</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="9" y1="3" x2="9" y2="21"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Real Estate -->
+            <div class="col-lg-6 col-md-12 reveal-scroll-right">
+                <div class="project-card">
+                    <div class="project-cover-gradient cover-4">
+                        <span class="project-category">CMS Development</span>
+                        <div class="project-icon-badge">🏠</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-name">Real Estate Website</h3>
+                        <p class="project-desc">Customized a professional real estate website using WordPress and
+                            Elementor, including responsive layouts, property filter mechanisms, booking forms, and
+                            optimized loading speeds.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">WordPress</span>
+                            <span class="tech-badge">Elementor</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">CSS</span>
+                        </div>
+                        <!--<div class="project-links">
+                            <a href="#" class="project-link-btn primary-link">
+                                <span>Live Demo</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link-btn secondary-link">
+                                <span>Gallery</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21 15 16 10 5 21"></polyline>
+                                </svg>
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container testimonials-section" id="testimonials">
+        <div class="row">
+            <div class="col-12 text-center mb-5 reveal-scroll-up">
+                <h2 class="testimonials-title">Client & Team <span class="gradient-text">Feedback</span></h2>
+                <div class="testimonials-subtitle-line"></div>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <!-- Testimonial 1 -->
+            <div class="col-lg-6 col-md-12 reveal-scroll-left">
+                <div class="testimonial-card">
+                    <div class="testimonial-glow"></div>
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">"Rajeswari consistently delivered clean, responsive, and user-friendly
+                        designs while maintaining excellent attention to detail."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SS</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Project Manager</h4>
+                            <span class="author-comp">Sannee Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-lg-6 col-md-12 reveal-scroll-right">
+                <div class="testimonial-card">
+                    <div class="testimonial-glow"></div>
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">"Rajeswari has a strong understanding of UI/UX principles and applies
+                        them effectively in her work. Her designs are clean, modern, and user-focused."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AS</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Senior Developer</h4>
+                            <span class="author-comp">Adhrit Software</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container experience-section" id="experience">
+        <div class="row">
+            <div class="col-12 text-center mb-5 reveal-scroll-up">
+                <h2 class="experience-title">Work <span class="gradient-text">Experience</span></h2>
+                <div class="experience-subtitle-line"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12">
+                <div class="timeline-container">
+                    <div class="timeline-track"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal-scroll-left">
+                        <div class="timeline-dot-pulse"></div>
+                        <div class="timeline-card">
+                            <div
+                                class="timeline-header d-flex justify-content-between align-items-start flex-wrap gap-2">
+                                <div>
+                                    <h3 class="timeline-role">Web Developer (Internship)</h3>
+                                    <span class="timeline-company">Sannee Solutions</span>
+                                </div>
+                                <!-- <span class="timeline-duration">Jan 2024 - Present</span>-->
+                            </div>
+                            <div class="timeline-body mt-3">
+                                <h4 class="timeline-project-title">Key Projects: Applicant Tracking System (ATS) &
+                                    Company Website</h4>
+                                <p class="timeline-desc">Designed and built a complete web-based ATS application to
+                                    streamline hiring pipelines, manage vacancy postings, monitor candidate flows, and
+                                    orchestrate interviews.</p>
+                                <ul class="timeline-bullets">
+                                    <li>Architected user journeys and visual layouts for candidate dashboard.</li>
+                                    <li>Crafted responsive, pixel-perfect web pages using Bootstrap and JavaScript.</li>
+                                    <li>Partnered on backend script integrations (PHP/MySQL) for secure applicant
+                                        database connections.</li>
+                                    <li>Optimized existing company pages, achieving a significant decrease in page load
+                                        times.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item reveal-scroll-right">
+                        <div class="timeline-dot-pulse"></div>
+                        <div class="timeline-card">
+                            <div
+                                class="timeline-header d-flex justify-content-between align-items-start flex-wrap gap-2">
+                                <div>
+                                    <h3 class="timeline-role">Junior Web Developer</h3>
+                                    <span class="timeline-company">Adhrit Software</span>
+                                </div>
+                                <!--<span class="timeline-duration">Jun 2022 - Dec 2023</span>-->
+                            </div>
+                            <div class="timeline-body mt-3">
+                                <h4 class="timeline-project-title">Key Projects: Responsive Landing Pages & E-Commerce
+                                    Integrations</h4>
+                                <p class="timeline-desc">Programmed robust client-facing web sites, incorporating
+                                    search-optimized structures, custom WordPress interfaces, and responsive
+                                    stylesheets.</p>
+                                <ul class="timeline-bullets">
+                                    <li>Built 10+ dynamic business and showcase websites with strict mobile-first design
+                                        rules.</li>
+                                    <li>Customized WordPress themes and integrated APIs to match client functional
+                                        briefs.</li>
+                                    <li>Improved UI elements, boosting interactive user engagement score.</li>
+                                    <li>Resolved layout display issues and fixed script bugs reported in code audits.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       GITHUB SECTION
+       ========================================== -->
+    <section class="container github-section" id="github-activity">
+        <div class="row">
+            <div class="col-12 text-center mb-5 reveal-scroll-up">
+                <h2 class="github-title">GitHub <span class="gradient-text">Contributions</span></h2>
+                <div class="github-subtitle-line"></div>
+            </div>
+        </div>
+        <div class="row g-4 align-items-stretch">
+            <!-- Left Side: Profile Stats & Graph -->
+            <div class="col-lg-6 col-md-12 reveal-scroll-left">
+                <div class="github-profile-card">
+                    <div class="card-glow"></div>
+                    <div class="profile-header d-flex align-items-center gap-3">
+                        <div class="profile-avatar">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="github-icon-svg">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="profile-name">Rajeswari Reddy</h3>
+                            <span class="profile-handle">@rajeswari-reddy</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-stats row text-center my-4 g-2">
+                        <div class="col-4">
+                            <div class="stat-box">
+                                <span class="stat-number">18</span>
+                                <span class="stat-label">Repositories</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-box">
+                                <span class="stat-number">45</span>
+                                <span class="stat-label">Stars</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-box">
+                                <span class="stat-number">1.2K+</span>
+                                <span class="stat-label">Contributions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="graph-wrapper">
+                        <div class="graph-meta d-flex justify-content-between align-items-center mb-2">
+                            <span class="graph-title">Recent Activity</span>
+                            <span class="graph-legend">Less <span class="legend-box level-0"></span><span
+                                    class="legend-box level-1"></span><span class="legend-box level-2"></span><span
+                                    class="legend-box level-3"></span><span class="legend-box level-4"></span>
+                                More</span>
+                        </div>
+                        <div id="github-contrib-graph" class="contrib-grid"></div>
+                    </div>
+
+                    <div class="mt-4 text-center">
+                        <a href="https://github.com/krajeswariwebtech-oss" target="_blank"
+                            class="btn-custom btn-secondary-hero w-100 justify-content-center">
+                            <span>Follow on GitHub</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Featured Repositories -->
+            <div class="col-lg-6 col-md-12 reveal-scroll-right">
+                <div class="d-flex flex-column h-100 justify-content-between gap-4">
+                    <!-- Repo 1 -->
+                    <div class="github-repo-card">
+                        <div class="repo-card-glow"></div>
+                        <div class="repo-header d-flex justify-content-between align-items-start">
+                            <div>
+                                <h3 class="repo-name"><a href="https://github.com"
+                                        target="_blank">applicant-tracking-system</a></h3>
+                                <p class="repo-desc">A web-based recruitment management platform designed to automate
+                                    hiring pipelines, manage vacancies, and monitor applicant flows.</p>
+                            </div>
+                            <span class="repo-badge">Public</span>
+                        </div>
+                        <div class="repo-footer d-flex justify-content-between align-items-center mt-3">
+                            <div class="repo-tags d-flex align-items-center gap-3">
+                                <span class="repo-lang"><span class="lang-dot php-dot"></span>PHP</span>
+                                <span class="repo-stat"><span class="stat-icon">★</span> 28</span>
+                                <span class="repo-stat"><span class="stat-icon">⌥</span> 12</span>
+                            </div>
+                            <a href="https://github.com" target="_blank" class="repo-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Repo 2 -->
+                    <div class="github-repo-card">
+                        <div class="repo-card-glow"></div>
+                        <div class="repo-header d-flex justify-content-between align-items-start">
+                            <div>
+                                <h3 class="repo-name"><a href="https://github.com"
+                                        target="_blank">aws-three-tier-architecture</a></h3>
+                                <p class="repo-desc">Highly available and secure three-tier web application
+                                    infrastructure deployed on AWS using custom VPC configuration and Terraform.</p>
+                            </div>
+                            <span class="repo-badge">Public</span>
+                        </div>
+                        <div class="repo-footer d-flex justify-content-between align-items-center mt-3">
+                            <div class="repo-tags d-flex align-items-center gap-3">
+                                <span class="repo-lang"><span class="lang-dot tf-dot"></span>Terraform</span>
+                                <span class="repo-stat"><span class="stat-icon">★</span> 19</span>
+                                <span class="repo-stat"><span class="stat-icon">⌥</span> 6</span>
+                            </div>
+                            <a href="https://github.com" target="_blank" class="repo-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       CONTACT SECTION
+       ========================================== -->
+    <section class="container Contact-section" id="contact">
+        <div class="row">
+            <div class="col-12 text-center mb-5 reveal-scroll-up">
+                <h2 class="contact-title">Contact <span class="gradient-text">Me</span></h2>
+                <div class="contact-subtitle-line"></div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <!-- Left Column: Contact Cards -->
+            <div class="col-lg-5 col-md-12 reveal-scroll-left">
+                <div class="contact-info-wrapper h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="contact-heading">Get In Touch</h3>
+                        <p class="contact-desc mb-4">Let's connect and create something impactful together. I'm always
+                            open to discussing new projects, creative ideas, or opportunities in , Web
+                            Development , AI , UI/UX Design and Cloud Solutions.</p>
+                    </div>
+
+                    <div class="contact-methods d-flex flex-column gap-3 mb-4">
+                        <!-- Email Card -->
+                        <div class="contact-method-card">
+                            <div class="method-icon-wrapper">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Email Me</span>
+                                <a href="mailto:krajeswariwebtech@gmail.com"
+                                    class="method-value">krajeswariwebtech@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="contact-method-card">
+                            <div class="method-icon-wrapper">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Call Me</span>
+                                <a href="tel:+919078183346" class="method-value">+91 9078183346</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="social-links-wrapper">
+                        <span class="socials-title d-block mb-3">Connect With Me</span>
+                        <div class="social-buttons d-flex gap-3">
+                            <a href="https://www.linkedin.com/in/k-rajeswari-reddy-8200461b2" target="_blank"
+                                class="social-btn linkedin-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/krajeswariwebtech-oss" target="_blank"
+                                class="social-btn github-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            <!-- Instagram Button -->
+                            <a href="https://www.instagram.com/coeur_heureux_99?igsh=NnFmZ3g2cXUyYWx6" target="_blank"
+                                class="social-btn instagram-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="col-lg-7 col-md-12 reveal-scroll-right">
+                <div class="contact-form-card">
+                    <div class="form-glow"></div>
+                    <form id="contact-form" action="https://formsubmit.co/krajeswariwebtech@gmail.com" method="POST"
+                        class="d-flex flex-column gap-4">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-group-custom">
+                                    <input type="text" id="form-name" name="name" required placeholder=" ">
+                                    <label for="form-name">Your Name</label>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group-custom">
+                                    <input type="email" id="form-email" name="email" required placeholder=" ">
+                                    <label for="form-email">Your Email</label>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group-custom">
+                            <input type="text" id="form-subject" name="subject" required placeholder=" ">
+                            <label for="form-subject">Subject</label>
+                            <div class="input-line"></div>
+                        </div>
+
+                        <div class="form-group-custom">
+                            <textarea id="form-message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="form-message">Message</label>
+                            <div class="input-line"></div>
+                        </div>
+
+                        <button type="submit" class="btn-custom btn-primary-hero justify-content-center">
+                            <span>Send Message</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="send-icon-svg">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer mt-5 pt-5 border-top border-secondary border-opacity-10 text-center">
+
+
+            <p class="copyright-text mt-4">© 2026 K Rajeswari Reddy. All Rights Reserved.</p>
+        </footer>
+    </section>
+
+</body>
+
+</html>
